@@ -1,0 +1,54 @@
+/* Desenvolvido por Gustavo Rosa por meio de projeto da Digital Innovation One */
+
+body {
+	background: #fafafa;
+}
+
+/* Estilo Dino */
+.dino {
+    width: 60px;
+    height: 60px;
+    background-image: url(dino.png);
+    position: absolute; /* Independentemente do que estiver em volta */
+    bottom: 0; /* Colocar o dino na parte inferior da tela */
+}
+
+/* Estilo Cactus*/
+.cactus {
+	position: absolute;
+	width: 60px; 
+	height: 60px;
+	bottom: 0;
+	background-image: url(cactus.png);
+}   
+
+/* Estilo Mensagem de Game-Over */
+.game_over {
+	text-align: center;
+	color: #666;
+	margin-top: 50px;
+	font-family: arial;
+}
+
+/* Animação */
+@keyframes sliderlight { 
+	from {
+		background-position: 70000%;
+	}
+
+	to {
+		background-position: 0;
+
+	}
+}
+
+/* Estilo de fundo do jogo */
+.background {
+	position: absolute;
+	bottom: 0;
+	background-image: url(background.png);
+	background-repeat: repeat-x;
+	animation: sliderlight 600s infinite linear;
+	width: 100%;
+	height: 200px;
+}
